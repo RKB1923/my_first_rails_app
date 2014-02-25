@@ -1,0 +1,9 @@
+<% if params[:name] %>
+    <% if params[:name].downcase == 'rodney'%>
+        <h2>You are awesome!</h2>
+    <% else %>
+        <h1>Hello <%= params[:name].capitalize %>!</h1>
+    <% end %>
+<% else %>
+    <h1>Hello!</h1>
+<% end %>
